@@ -1,0 +1,77 @@
+<!-- Arithmatica Operator -->
+<script>
+    let a = 10;
+    let b = 3;
+
+    console.log("A =", a)
+    console.log("B =", b)
+
+    console.log("Addition:", a + b);        // 13
+    console.log("Subtraction:", a - b);     // 7
+    console.log("Multiplication:", a * b);  // 30
+    console.log("Division:", a / b);        // 3.33
+    console.log("Modulus:", a % b);         // 1
+
+    // String Concatination
+    console.log("String Concatination:", "Dev" + " " + "Patel")
+
+    a++;
+    console.log("Increment A by 2:", a);           // 11
+    a -= 2;
+    console.log("Decrement 2 A by 2:", a);           // 9
+
+    b--;
+    console.log("Decrement B by 1:", b);           // 2
+    b += 2;
+    console.log("Increment B by 2:", b);           // 4
+</script>
+
+<!-- Comparison Operators -->
+<script>
+    let number1 = 10;
+    let number2 = "10";
+    let number3 = 5;
+
+    console.log("num1 =", number1)
+    console.log("num2 =", number2)
+    console.log("num3 =", number3)
+
+    console.log('num1 == num2', number1 == number2);   // true (only value is checked)
+    console.log('num1 === num2', number1 === number2);  // false (value + datatype checked)
+
+    console.log('num1 != num3', number1 != number3);   // true
+    console.log('num1 !== num2', number1 !== number2);  // true
+
+    console.log('num1 > num3', number1 > number3);    // true
+    console.log('num1 < num2', number1 < number3);    // false
+
+    console.log('num1 >= 10', number1 >= 10);  // true
+    console.log('num3 <= 5', number3 <= 5);   // true
+</script>
+
+<!-- Logical Operators -->
+<script>
+    let age = 20;
+    let hasID = true;
+    console.log('age:', age)
+    console.log('hasID:', hasID)
+
+    // Logical AND (&&)
+    console.log('age >= 18 && hasID:', age >= 18 && hasID);   // true
+
+    // Logical OR (||)
+    console.log('age < 18 || hasID:', age < 18 || hasID);    // true
+
+    // Logical NOT (!)
+    console.log('!hasID', !hasID);               // false
+
+    // Example
+    let marks = 75;
+
+    // Student passed if marks are >= 40
+    if (marks >= 40 && marks <= 100) {
+        console.log(`Student Passed: ${marks}`);
+    } else {
+        console.log("Student Failed");
+    }
+</script>

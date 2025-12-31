@@ -1,0 +1,23 @@
+/* ================= EXTERNAL CSS FILE ================= */
+
+/* Element selector */
+h1 {
+  text-decoration: underline;
+}
+
+/* Class selector */
+.externalStyle {
+  color: brown;
+  font-style: italic;
+}
+
+/* Element selector */
+a {
+  color: darkred;
+  text-decoration: none;
+}
+
+/* Image styling */
+img {
+  border: 2px solid black;
+}

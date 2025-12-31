@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- HTML5 document declaration -->
+
+<html>
+
+<head>
+    <title>HTML with All Types of CSS</title>
+
+    <!-- ================= INTERNAL CSS ================= -->
+    <!-- Internal CSS is written inside <style> tag -->
+    <style>
+        /* -------- ELEMENT SELECTOR -------- */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* -------- ELEMENT SELECTOR -------- */
+        p {
+            color: blue;
+        }
+
+        /* -------- CLASS SELECTOR -------- */
+        .highlight {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* -------- ID SELECTOR -------- */
+        #mainHeading {
+            color: purple;
+            text-align: center;
+        }
+
+        /* -------- FORM STYLING -------- */
+        form {
+            background-color: white;
+            padding: 15px;
+            width: 300px;
+        }
+    </style>
+
+    <!-- ================= EXTERNAL CSS ================= -->
+    <!-- External CSS file is linked using <link> tag -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ID selector example -->
+    <h1 id="mainHeading">Welcome to CSS Demonstration</h1>
+
+    <!-- Inline CSS example (Highest Priority) -->
+    <p style="color: red;">
+        This paragraph uses <b>Inline CSS</b>, so it overrides Internal and External CSS.
+    </p>
+
+    <!-- Class selector example -->
+    <p class="highlight">
+        This paragraph uses a CLASS selector from Internal CSS.
+    </p>
+
+    <!-- External CSS selector example -->
+    <p class="externalStyle">
+        This paragraph is styled using EXTERNAL CSS.
+    </p>
+
+    <hr>
+
+    <p>
+        HTML is the <sup>5</sup>th version used for web development.
+    </p>
+
+    <a href="https://www.google.com" target="_blank">
+        Visit Google
+    </a>
+
+    <br><br>
+
+    <img src="https://via.placeholder.com/150" alt="Sample Image">
+
+    <br><br>
+
+    <!-- Inline CSS on button -->
+    <button style="background-color: orange; padding: 10px;">
+        Click Me
+    </button>
+    <hr>
+    <h1>Student Registration Form</h1>
+    <form action="/">
+        <p>
+            Name:
+            <input type="text">
+        </p>
+        <p>
+            Email:
+            <input type="email">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+</body>
+
+</html>
