@@ -35,7 +35,26 @@
         console.log(todos[i]);
     }
     for (let key in todos[i]){
-        console.log(`${key}: ${todos[i][key]}`);
-        
+        console.log(`${key}: ${todos[i][key]}`); 
     }
+
+
+    const numbers = [10, 20, 30, 40, 50];
+    numbers.forEach((numbers)=>{
+        console.log(numbers);
+        while(numbers>25){
+            console.log("number is greater than 25: " + numbers);
+            break;
+        }
+
+    })
+
+
+    let nums = [5, 10, 15, 20, 25, 30];
+    nums.forEach((ele,index)=> {
+        if(ele>3){
+            return;
+        }console.log(ele,index);
+    })
+
 </script>
