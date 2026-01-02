@@ -27,16 +27,32 @@
 // let myCall = () => console.log("myCall executed");
 // setTimeout(myCall, 3000);
 
+
+
 // Example of setInterval and clearInterval
-let counter = 0;
+// let counter = 0;
+// function increamentCounter() {
+//   counter++;
+//   console.log(counter);
+//   if (counter === 5) {
+//     clearInterval(timer);
+//     console.log("Timer Stopped");
+//   }
+// }
+// let timer = setInterval(increamentCounter, 1000);
 
-function increamentCounter() {
-  counter++;
-  console.log(counter);
-  if (counter === 5) {
-    clearInterval(timer);
-    console.log("Timer Stopped");
-  }
-}
 
-let timer = setInterval(increamentCounter, 1000);
+
+//promise
+let myresolve = new Promise((resolve, reject) =>{
+    console.log("Promise is pending");
+    setTimeout(()=>{
+        resolve([
+      { watchModel: "Balmain", price: 75000 },
+      { watchModel: "Versace", price: 115000 },
+      { watchModel: "Casio", price: 5000 },
+    ]);
+    }, 3000);
+});
+let response = myresolve;
+console.log(response);
