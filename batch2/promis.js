@@ -54,5 +54,30 @@ let myresolve = new Promise((resolve, reject) =>{
     ]);
     }, 3000);
 });
-let response = myresolve;
-console.log(response);
+// let response = myresolve;
+// console.log(response);
+async function promiseCall(){
+  let response = await myresolve;
+  console.log(response);
+}
+promiseCall();
+
+
+let myReject = new Promise((resolve, reject) =>{
+    console.log("Promise is pending");
+    setTimeout(()=>{
+        reject("Promise rejected");
+    }, 3000);
+});
+
+async function promiseRejectCall(){
+  try {
+    let response = await myReject;
+    console.log(response);
+  } catch (error) {
+    console.log("The error is:", error);
+  }
+}
+
+promiseRejectCall();
+
